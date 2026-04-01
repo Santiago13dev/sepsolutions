@@ -1,3 +1,52 @@
+@media (max-width: 900px) {
+  .nos-about__container {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .nos-about__highlights {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+  .nos-about__highlight {
+    flex: 1 1 45%;
+    min-width: 220px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .nos-about {
+    padding: 3rem 0.5rem 2rem;
+  }
+  .nos-about__container {
+    gap: 1.5rem;
+  }
+  .nos-about__text {
+    padding: 0;
+  }
+  .nos-about__highlights {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  .nos-about__highlight {
+    flex: 1 1 100%;
+    min-width: 0;
+    padding: 1rem 0.7rem;
+  }
+  .nos-about__tag {
+    font-size: 0.65rem;
+    padding: 0.3rem 0.7rem;
+  }
+  .nos-about h2 {
+    font-size: 1.2rem;
+  }
+  .nos-about__lead {
+    font-size: 0.98rem !important;
+    padding-left: 0.5rem;
+  }
+}
 // ══════════════════════════════════════════════════════════
 //  NOSOTROS – Premium Redesign
 // ══════════════════════════════════════════════════════════
