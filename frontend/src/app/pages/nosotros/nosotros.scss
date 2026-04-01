@@ -1311,6 +1311,112 @@ $diff-cyan: #0891b2;
     color: rgba(255, 255, 255, 0.45);
     line-height: 1.6;
   }
+
+  // ── Responsive ──
+  @media (max-width: 1024px) {
+    padding: 4rem 1rem;
+
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 3rem 1rem;
+
+    &__header {
+      margin-bottom: 2.5rem;
+    }
+
+    &__header h2 {
+      font-size: 1.4rem;
+    }
+
+    &__header p {
+      font-size: 0.92rem;
+    }
+
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+
+    &__card {
+      padding: 1.5rem 1rem 1.25rem;
+    }
+
+    &__card-avatar {
+      width: 70px;
+      height: 70px;
+
+      svg {
+        width: 32px;
+        height: 32px;
+      }
+    }
+
+    &__card-info h4 {
+      font-size: 0.92rem;
+    }
+
+    &__card-role {
+      font-size: 0.68rem;
+      padding: 0.2rem 0.6rem;
+    }
+
+    &__card-info p {
+      font-size: 0.78rem;
+    }
+  }
+
+  @media (max-width: 500px) {
+    padding: 2.5rem 0.75rem;
+
+    &__grid {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    &__card {
+      padding: 1.5rem 1.25rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-align: left;
+      gap: 1rem;
+    }
+
+    &__card-img {
+      margin-bottom: 0;
+      flex-shrink: 0;
+    }
+
+    &__card-avatar {
+      width: 60px;
+      height: 60px;
+
+      svg {
+        width: 28px;
+        height: 28px;
+      }
+    }
+
+    &__card-info h4 {
+      font-size: 0.9rem;
+      margin-bottom: 0.25rem;
+    }
+
+    &__card-role {
+      font-size: 0.65rem;
+      margin-bottom: 0.5rem;
+    }
+
+    &__card-info p {
+      font-size: 0.78rem;
+      line-height: 1.5;
+    }
+  }
 }
 
 @keyframes equipoGlowPulse {
